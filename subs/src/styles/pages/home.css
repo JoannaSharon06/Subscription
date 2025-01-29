@@ -1,0 +1,52 @@
+body{
+  margin:0;
+}
+
+#backgroundimage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%) blur(3px);
+  z-index: -1;
+}
+
+.content {
+  max-width: 600px;
+  padding: 20px;
+  
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+#subsbutton {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #007bff;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#subsbutton:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+

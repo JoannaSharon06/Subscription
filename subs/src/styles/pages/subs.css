@@ -1,0 +1,92 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  background-color: #000000;
+  margin: 10px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.subscription {
+  padding: 40px;
+  max-width: 900px;
+  margin: 50px auto;
+  border-radius: 15px;
+  background: #1e1e1e;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  background: #2c2c2c;
+  padding: 20px;
+  border-radius: 12px;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.icon {
+  font-size: 2.5rem;
+  color: #ffcc00;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+.plan {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.2rem;
+}
+
+button {
+  padding: 12px 18px;
+  background: #ff5177;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #ff3d68;
+  transform: scale(1.05);
+}
+
+.viewbutton {
+  width: 100%;
+  padding: 15px;
+  background: #0084ff;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 8px;
+}
