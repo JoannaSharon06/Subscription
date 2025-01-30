@@ -11,7 +11,7 @@ const Orders = () => {
       const fetchOrders = async () => {
         try {
           console.log("Fetching orders for:", userEmail);
-          const response = await axios.get(`http://localhost:5001/orders?userEmail=${userEmail}`);
+          const response = await axios.get(`https://subscription-3.onrender.com/orders?userEmail=${userEmail}`);
           console.log("Fetched Orders:", response.data);
           setOrders(response.data);
         } catch (error) {
