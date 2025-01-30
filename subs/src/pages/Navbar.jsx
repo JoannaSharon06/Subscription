@@ -14,6 +14,7 @@ const Navbar = () => {
           <Link to="/cart">Cart</Link>
           <Link to="/signup">Signup</Link>
           <Link to="/orders">Orders</Link>
+          <Link to="/signup">Logout</Link>
         </li>
       </ul>
     </nav>
