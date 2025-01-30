@@ -43,8 +43,8 @@ const PaymentPage = () => {
         body: JSON.stringify(orderDetails),
       });
 
-      const data = await response.json();
-      if (response.ok) {
+      const data = await req.json();
+      if (req.ok) {
         alert("Payment successful using ${paymentMethod}!");
       
         navigate("/orders"); 
