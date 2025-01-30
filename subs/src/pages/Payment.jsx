@@ -45,14 +45,13 @@ const PaymentPage = () => {
 
       const data = await req.json();
       if (req.ok) {
-        alert("Payment successful using ${paymentMethod}!");
-      
+        alert("Payment successful");
         navigate("/orders"); 
       } else {
         alert(data.message);
       }
-    } catch (error) {
-      console.error("Payment error:", error);
+    } catch (err) {
+      console.error("Payment error", err);
       alert("Payment failed. Please try again.");
     }
   };
@@ -63,7 +62,7 @@ const PaymentPage = () => {
       <p>Select a payment method and proceed.</p>
 
       <div className="options">
-        {["Credit/Debit Card", "Google Pay", "PayPal", "UPI"].map((method) => (
+        {["Credit/Debit Card", "Google Pay", "PayTm", "UPI"].map((method) => (
           <label key={method}>
             <input
               type="radio"

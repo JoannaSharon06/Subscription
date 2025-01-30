@@ -9,7 +9,7 @@ const HomePage = () => {
       <img src={BackgroundImage} alt="Background" id="backgroundimage" />
 
       <div className="content">
-        <h1>Welcome to Our Subscription Service</h1>
+        <h1>Welcome to SubsManager</h1>
         <p>Choose your favorite subscription and add it to your cart!</p>
 
         <Link to="/subscriptions" id="subsbutton">

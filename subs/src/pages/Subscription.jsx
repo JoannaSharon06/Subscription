@@ -36,7 +36,7 @@ const subscriptions = [
   {
     id: 4,
     name: "Apple Music",
-    icon: "▶️",
+    icon: "🎵",
     plans: [
       { id: "music-individual", name: "Individual", price: 119 },
       { id: "music-family", name: "Family", price:179 },
@@ -78,7 +78,6 @@ const SubscriptionPage = () => {
 
   return (
     <div className="subscription">
-      <h1>Choose Your Subscription</h1>
       <div className="list">
         {subscriptions.map((sub) => (
           <div key={sub.id} className="item">
