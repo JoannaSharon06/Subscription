@@ -8,7 +8,6 @@ const bcrypt = require('bcrypt');
 const cors = require('cors');
 const jwt = require('jsonwebtoken');
 const app = express();
-
 app.use(cors());
 app.use(express.json());
 
@@ -43,10 +42,8 @@ app.post('/signup', async(req, res) => {
   }
 });
 
-
 app.post('/login', async (req, res) => {
   const { email, password } = req.body;
-
   try {
     const user = await Signup.findOne({ email: email });
     if (!user) {
@@ -153,12 +150,47 @@ app.post("/orders", async (req, res) => {
 
 app.get("/orders", async (req, res) => {
   try {
-    const orders = await Order.find();
+    const userEmail = req.query.userEmail;
+    console.log(userEmail);
+    if (!userEmail) {
+      return res.status(400).json({ message: "User email is required." });
+    }
+
+    const orders = await Order.find({ userEmail: userEmail }); 
+
+    if (orders.length === 0) {
+      return res.status(404).json({ message: "No orders found for this email." });
+    }
+
     res.json(orders);
   } catch (error) {
+    console.error("Error fetching orders:", error);
     res.status(500).json({ message: "Failed to fetch orders." });
   }
 });
+
+
+app.get("/orders/:email", async (req, res) => {
+  try {
+    const email = req.params.email.trim(); // Ensure no spaces or line breaks
+
+    if (!email) {
+      return res.status(400).json({ message: "User email is required." });
+    }
+
+    const orders = await Order.find({ userEmail: email });
+
+    if (orders.length === 0) {
+      return res.status(404).json({ message: "No orders found for this email." });
+    }
+
+    res.json(orders);
+  } catch (error) {
+    console.error("Error fetching orders:", error);
+    res.status(500).json({ message: "Failed to fetch orders." });
+  }
+});
+
 
 
 app.listen(5001, () => {
