@@ -29,8 +29,9 @@
     margin: 20px 0;
 }
 
+
 .cart  button {
-    background: #007bff;
+    background: black;
     color: white;
     border: none;
     padding: 12px 18px;
@@ -62,7 +63,7 @@
 }
 
 .item button {
-    background: #ff4d4d;
+    background: #ff0000;
     color: white;
     border: none;
     padding: 8px 12px;
@@ -72,5 +73,5 @@
 }
 
 .item button:hover {
-    background: #e60000;
+    background: #ff0000;
 }

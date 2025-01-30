@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-
 const Orders = () => {
   const [orders, setOrders] = useState([]);
   const userEmail = localStorage.getItem("userEmail");
@@ -27,14 +26,16 @@ const Orders = () => {
   }, [userEmail]);
 
   return (
-    <div className="container">
-      <h2>Your Orders</h2>
+    <div className="ordercontainer">
+      <h2>Active Orders</h2>
       {orders.length === 0 ? (
         <p>No orders found.</p>
       ) : (
         <ul>
+          
           {orders.map((order, index) => (
             <li key={index}>
+               
               {order.cartItems.map((item) => (
                 <div key={item.name}>
                   {item.name} - ₹{item.price} ({order.paymentMethod})

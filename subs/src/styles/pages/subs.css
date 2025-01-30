@@ -65,7 +65,7 @@ h3 {
 
 button {
   padding: 12px 18px;
-  background: #ff5177;
+  background: #f9496f;
   color: white;
   border: none;
   border-radius: 8px;
@@ -83,7 +83,7 @@ button:hover {
 .viewbutton {
   width: 100%;
   padding: 15px;
-  background: #0084ff;
+  background: #070707;
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 1px;

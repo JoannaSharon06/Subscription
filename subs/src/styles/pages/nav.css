@@ -4,8 +4,8 @@ nav {
     align-items: center;
     padding: 15px 30px;
     
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    color:black;
     position: fixed;
     top: 10px;
     left: 50%;
@@ -17,10 +17,12 @@ nav {
   .logo {
     font-size: 22px;
     font-weight: bold;
-    color: white;
+    color: black;
   }
   
   ul {
+    color: black;
+
     list-style: none;
     display: flex;
     gap: 20px;
@@ -34,7 +36,7 @@ nav {
   
   ul a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 18px;
     font-weight: 500;
     padding: 8px 15px;
