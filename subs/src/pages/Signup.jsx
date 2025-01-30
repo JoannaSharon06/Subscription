@@ -1,6 +1,6 @@
 import {useState} from 'react'
 import axios from 'axios'
-import {useNavigate} from 'react-router-dom'
+import {useNavigate,Link} from 'react-router-dom'
 import '../styles/pages/signup.css'
 const Signup = () => {
     const [firstname,setFirstName] = useState("")
@@ -43,7 +43,7 @@ const Signup = () => {
             Password : <input type="password" value={password} onChange={(e)=>{setPassword(e.target.value)}} required/>
             <button type="submit">Signup</button>
         </form>
-        <p>Already have an account??<a href="/login">Login</a></p>
+        <p>Already have an account??<Link to="/login">Login</Link></p>
       
     </div>
   )
