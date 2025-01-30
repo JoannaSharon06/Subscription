@@ -6,7 +6,7 @@ import '../styles/pages/home.css';
 const HomePage = () => {
   return (
     <div >
-      <img src={BackgroundImage} alt="Background" id="backgroundimage" />
+      
 
       <div className="content">
         <h1>Welcome to SubsManager</h1>
