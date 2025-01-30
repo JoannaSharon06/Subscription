@@ -37,7 +37,7 @@ const PaymentPage = () => {
     };
 
     try {
-      const req = await fetch("http://localhost:5001/orders", {
+      const req = await fetch("https://subscription-1-08z8.onrender.com/orders", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(orderDetails),

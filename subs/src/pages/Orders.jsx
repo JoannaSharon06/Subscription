@@ -6,7 +6,7 @@ const Orders = () => {
 
   useEffect(() => {
     if (userEmail) {
-      fetch("http://localhost:5001/orders/{userEmail}")
+      fetch("https://subscription-1-08z8.onrender.com/orders/{userEmail}")
         .then((res) => res.json())
         .then((data) => {
           console.log("Fetched Orders:", data); 

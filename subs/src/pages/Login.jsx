@@ -10,7 +10,7 @@ const Login=(p)=>{
         e.preventDefault()
         try{
             console.log("event triggered");
-            const req = await axios.post("http://localhost:5001/login",{
+            const req = await axios.post("https://subscription-1-08z8.onrender.com/login",{
               email:email,
               password:password
             })

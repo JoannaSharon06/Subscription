@@ -14,7 +14,7 @@ const Signup = () => {
       event.preventDefault();
       try{
         console.log("event triggered");
-        const req = await axios.post("http://localhost:5001/signup",{
+        const req = await axios.post("https://subscription-1-08z8.onrender.com/signup",{
           firstname:firstname,
           lastname:lastname,
           username:username,
