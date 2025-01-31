@@ -4,8 +4,8 @@ nav {
     align-items: center;
     padding: 15px 30px;
     
-    background-color: white;
-    color:black;
+    background-color: 243b55;
+    color:white;
     position: fixed;
     top: 10px;
     left: 50%;
@@ -17,11 +17,11 @@ nav {
   .logo {
     font-size: 22px;
     font-weight: bold;
-    color: black;
+    color: white;
   }
   
   ul {
-    color: black;
+    color: white;
 
     list-style: none;
     display: flex;
@@ -36,7 +36,7 @@ nav {
   
   ul a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 18px;
     font-weight: 500;
     padding: 8px 15px;
@@ -50,6 +50,6 @@ nav {
   }
   
   ul a:hover {
-    background: #333;
+    background: #000000;
   }
   
